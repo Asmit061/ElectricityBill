@@ -1,0 +1,25 @@
+
+#mylbl{
+	-fx-background-color: #ffb3b3;
+	-fx-text-fill: red;
+}
+#uname{
+		-fx-background-color: black;
+		-fx-text-fill: white;
+		-fx-border-color: white;		
+}
+#mid{
+		-fx-background-color: black;
+		-fx-text-fill: white;
+		-fx-border-color: white;	
+}
+#ano{
+			-fx-background-color: black;
+			-fx-text-fill: white;
+			-fx-border-color: white;
+}
+				
+.root{
+	-fx-background-color: pink;
+}	
+

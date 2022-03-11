@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewPaymentsController">
+   <children>
+       <Label fx:id="adminLabel" layoutX="727.0" layoutY="102.0" visible="false" />
+      <TableView fx:id="table_payments" layoutX="30.0" layoutY="111.0" onMouseClicked="#isSelected" prefHeight="195.0" prefWidth="711.0">
+        <columns>
+          <TableColumn fx:id="col_meterId" prefWidth="347.0" text="METER ID" />
+          <TableColumn fx:id="col_amount" prefWidth="363.0" text="NEW PAYMENTS" />
+        </columns>
+      </TableView>
+      <Button layoutY="-1.0" mnemonicParsing="false" onAction="#dashboad" style="-fx-background-color: #6699ff;" text="DASHBOARD" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="685.0" layoutY="1.0" mnemonicParsing="false" onAction="#exxit" prefHeight="20.0" prefWidth="79.0" style="-fx-background-color: #6699ff;" text="EXIT">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="685.0" layoutY="472.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="79.0" style="-fx-background-color: #6699ff;" text="LOGOUT" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="-3.0" prefHeight="70.0" prefWidth="276.0" text="NEW PAYMENTS" textFill="#252624">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Button layoutX="529.0" layoutY="384.0" mnemonicParsing="false" onAction="#approve" style="-fx-background-color: #6699ff;" text="APPROVE PAYMENT" />
+      <Label fx:id="statuslbl" alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="52.0" prefHeight="57.0" prefWidth="226.0" textFill="#8eb567">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="meterId" editable="false" layoutX="54.0" layoutY="330.0" prefHeight="31.0" prefWidth="226.0" promptText="MeterID" />
+      <TextField fx:id="amount" editable="false" layoutX="490.0" layoutY="330.0" prefHeight="31.0" prefWidth="226.0" promptText="Amount" />
+   </children>
+</AnchorPane>
